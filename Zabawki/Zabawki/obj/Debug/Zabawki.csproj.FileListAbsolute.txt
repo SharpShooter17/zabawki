@@ -1,0 +1,7 @@
+c:\users\oro-18.dmcs\documents\visual studio 2015\Projects\Zabawki\Zabawki\bin\Debug\Zabawki.exe.config
+H:\C#\Zabawki\Zabawki\bin\Debug\Zabawki.exe.config
+H:\C#\Zabawki\Zabawki\bin\Debug\Zabawki.exe
+H:\C#\Zabawki\Zabawki\bin\Debug\Zabawki.pdb
+H:\C#\Zabawki\Zabawki\obj\Debug\Zabawki.csprojResolveAssemblyReference.cache
+H:\C#\Zabawki\Zabawki\obj\Debug\Zabawki.exe
+H:\C#\Zabawki\Zabawki\obj\Debug\Zabawki.pdb
