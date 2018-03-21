@@ -26,17 +26,17 @@ namespace Zabawki
                 IAccelerate IAtest = z as IAccelerate;
                 if (IAtest != null)
                 {
-                    Console.Write("Accelerate: " + IAtest.Accelerate1);
+                    Console.WriteLine("Accelerate: " + IAtest.Accelerate);
                 }
                 IDive IDtest = z as IDive;
                 if (IDtest != null)
                 {
-                    Console.Write("Dive: " + IDtest.dive);
+                    Console.WriteLine("Dive: " + IDtest.Dive);
                 }
                 IRise IRtest = z as IRise;
                 if (IRtest != null)
                 {
-                    Console.Write("Rise: " + IRtest.rise);
+                    Console.WriteLine("Rise: " + IRtest.Rise);
                 }
             }
         }
