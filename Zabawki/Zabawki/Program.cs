@@ -11,9 +11,19 @@ namespace Zabawki
         static void Main(string[] args)
         {
             PokojZabawek room = new PokojZabawek();
-            room.zabawki.Add( new Car("BMW") );
-            room.zabawki.Add( new Box("pudlo") );
+
+            Car audi = new Car("Audi A4");
+            Box chocolateBox = new Box("Chocolate");
+
+            room.zabawki.Add( audi );
+            room.zabawki.Add( chocolateBox );
             room.pokazZabawki();
+            audi.Accelerate = 5;
+            chocolateBox.Dive = 3;
+            chocolateBox.Rise = 7;
+            room.pokazZabawki();
+
+            Console.ReadKey();
         }
     }
 }

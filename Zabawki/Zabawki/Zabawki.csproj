@@ -51,6 +51,7 @@
     <Compile Include="PokojZabawek.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Wartosc.cs" />
     <Compile Include="Zabawka.cs" />
   </ItemGroup>
   <ItemGroup>
