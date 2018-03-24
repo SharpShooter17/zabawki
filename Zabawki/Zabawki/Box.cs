@@ -8,7 +8,7 @@ namespace Zabawki
 {
     class Box : Zabawka, IDive, IRise
     {
-        public Box(string name) : base(name)
+        public Box(string name, delegat handler) : base(name, handler)
         {
         }
 

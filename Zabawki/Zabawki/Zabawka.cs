@@ -22,9 +22,10 @@ namespace Zabawki
 
         private string name;
 
-        public Zabawka(string name)
+        public Zabawka(string name, delegat handler)
         {
             this.name = name;
+            this.wartoscBazowa = new Wartosc(10.0f, 1.0f, handler);
         }
 
         public string Name
@@ -34,8 +35,7 @@ namespace Zabawki
                 return name;
             }
         }
-
-        internal Wartosc WartoscBazowa { get => wartoscBazowa; set => wartoscBazowa = value; }
         public double Wiek { get => wiek; set => wiek = value; }
+        internal Wartosc WartoscBazowa { get => wartoscBazowa; set => wartoscBazowa = value; }
     }
 }
