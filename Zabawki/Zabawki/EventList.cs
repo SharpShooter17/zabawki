@@ -8,13 +8,21 @@ namespace Zabawki
 {
     class EventList<T> : List<T>
     {
-        public delegate void objectAdded(T item, EventArgs eventArgs);
-        public event objectAdded AddEvent;
-
+        public delegate void eventType(T item, EventArgs eventArgs);
+        public event eventType AddEvent;
+        public event eventType LimitReached;
+        public int Limit = 3;
         public new void Add(T item)
         {
-            base.Add(item);
-            AddEvent(item, new EventArgs());
+            if (base.Count < this.Limit)
+            {
+                base.Add(item);
+                AddEvent(item, new EventArgs());
+            }
+            else
+            {
+                LimitReached(item, new EventArgs());
+            }
         }
     }
 }

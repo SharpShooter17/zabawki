@@ -14,10 +14,17 @@ namespace Zabawki
             Console.WriteLine("Dodano zabawke do pokoju: " + z.Name);
         }
 
+        static void OsiagnietoLimit(Object item, EventArgs eventArgs)
+        {
+            Console.WriteLine("Osiagnieto limit zabawek.. sorka :/");
+        }
+
         static void Main(string[] args)
         {
             PokojZabawek room = new PokojZabawek();
             room.Zabawki.AddEvent += DodanoZabawke;
+            room.Zabawki.LimitReached += OsiagnietoLimit;
+
             Car audi = new Car("Audi A4");
             Box chocolateBox = new Box("Chocolate");
 
@@ -28,7 +35,11 @@ namespace Zabawki
             chocolateBox.Dive = 3;
             chocolateBox.Rise = 7;
             room.pokazZabawki();
-
+            room.Zabawki.Add(new Car("Czolg"));
+            room.Zabawki.Add(new Car("Czolg"));
+            room.Zabawki.Add(new Car("Czolg"));
+            room.Zabawki.Add(new Car("Czolg"));
+            room.Zabawki.Add(new Car("Czolg"));
             Console.ReadKey();
         }
     }
