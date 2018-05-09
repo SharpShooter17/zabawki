@@ -5,3 +5,10 @@ H:\C#\Zabawki\Zabawki\bin\Debug\Zabawki.pdb
 H:\C#\Zabawki\Zabawki\obj\Debug\Zabawki.csprojResolveAssemblyReference.cache
 H:\C#\Zabawki\Zabawki\obj\Debug\Zabawki.exe
 H:\C#\Zabawki\Zabawki\obj\Debug\Zabawki.pdb
+C:\Users\Bartosz Ujazdowski\Desktop\Zabawki\Zabawki\Zabawki\bin\Debug\Zabawki.exe.config
+C:\Users\Bartosz Ujazdowski\Desktop\Zabawki\Zabawki\Zabawki\bin\Debug\Zabawki.exe
+C:\Users\Bartosz Ujazdowski\Desktop\Zabawki\Zabawki\Zabawki\bin\Debug\Zabawki.pdb
+C:\Users\Bartosz Ujazdowski\Desktop\Zabawki\Zabawki\Zabawki\obj\Debug\Zabawki.csprojResolveAssemblyReference.cache
+C:\Users\Bartosz Ujazdowski\Desktop\Zabawki\Zabawki\Zabawki\obj\Debug\Zabawki.csproj.CoreCompileInputs.cache
+C:\Users\Bartosz Ujazdowski\Desktop\Zabawki\Zabawki\Zabawki\obj\Debug\Zabawki.exe
+C:\Users\Bartosz Ujazdowski\Desktop\Zabawki\Zabawki\Zabawki\obj\Debug\Zabawki.pdb

@@ -8,7 +8,7 @@ namespace Zabawki
 {
     public class Car : Zabawka, IAccelerate
     {
-        public Car(string name) : base(name)
+        public Car(string name, delegat handler) : base(name, handler)
         {
         }
         private int accelerate;

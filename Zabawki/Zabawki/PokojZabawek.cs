@@ -8,9 +8,9 @@ namespace Zabawki
 {
     class PokojZabawek
     {
-        public List<Zabawka> zabawki = new List<Zabawka>();
+        private EventList<Zabawka> zabawki = new EventList<Zabawka>();
 
-        public List<Zabawka> Zabawki
+        public EventList<Zabawka> Zabawki
         {
             get
             {
