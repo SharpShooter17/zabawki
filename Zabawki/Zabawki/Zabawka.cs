@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 using System.Xml.Linq;
 
 namespace Zabawki
-{ 
+{
     public class Zabawka
     {
         private Wartosc wartoscBazowa;
@@ -35,7 +35,30 @@ namespace Zabawki
                 return name;
             }
         }
-        public double Wiek { get => wiek; set => wiek = value; }
-        internal Wartosc WartoscBazowa { get => wartoscBazowa; set => wartoscBazowa = value; }
+        public double Wiek
+        {
+            get
+            {
+                return wiek;
+            }
+
+            set
+            {
+                wiek = value;
+            }
+        }
+
+        internal Wartosc WartoscBazowa
+        {
+            get
+            {
+                return wartoscBazowa;
+            }
+
+            set
+            {
+                wartoscBazowa = value;
+            }
+        }
     }
 }

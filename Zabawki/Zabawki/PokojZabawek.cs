@@ -18,6 +18,45 @@ namespace Zabawki
             }
         }
 
+        public void setAccelerate(int accelerate)
+        {
+            foreach(Zabawka z in zabawki)
+            {
+                IAccelerate test = z as IAccelerate;
+                if (test != null)
+                {
+                    test.Accelerate = accelerate;
+                    Console.WriteLine("Zmiana predkosci dla zabawki: " + z.Name);
+                }
+            }
+        }
+
+        public void setDive(int dive)
+        {
+            foreach (Zabawka z in zabawki)
+            {
+                IDive test = z as IDive;
+                if (test != null)
+                {
+                    test.Dive = dive;
+                    Console.WriteLine("Zmiana glebokosci dla zabawki: " + z.Name);
+                }
+            }
+        }
+
+        public void setRise(int rise)
+        {
+            foreach (Zabawka z in zabawki)
+            {
+                IRise test = z as IRise;
+                if (test != null)
+                {
+                    test.Rise = rise;
+                    Console.WriteLine("Zmiana wzrostu dla zabawki: " + z.Name);
+                }
+            }
+        }
+
         public void pokazZabawki()
         {
             foreach(Zabawka z in zabawki)

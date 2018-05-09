@@ -57,6 +57,10 @@ namespace Zabawki
             Wartosc w = audi.WartoscBazowa;
             w.Cena = 100;
 
+            room.setAccelerate(3);
+            room.setDive(4);
+            room.setRise(7)
+
             Console.ReadKey();
         }
     }

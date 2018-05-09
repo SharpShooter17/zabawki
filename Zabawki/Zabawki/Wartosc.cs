@@ -25,10 +25,13 @@ namespace Zabawki
             this.wartoscSentymentalna = wartoscSentymentalna;
             this.wzrostWartosciEvent = eventHandler;
         }
-
         public float Cena
         {
-            get => cena;
+            get
+            {
+                return cena;
+            }
+
             set
             {
                 if (value < 0.0f)
@@ -39,12 +42,16 @@ namespace Zabawki
                 {
                     wzrostWartosciEvent(this, new EventArgs());
                 }
-                this.cena = value;
+                cena = value;
             }
         }
+
         public float WartoscSentymentalna
         {
-            get => wartoscSentymentalna;
+            get
+            {
+                return wartoscSentymentalna;
+            }
 
             set
             {
