@@ -12,7 +12,7 @@ namespace Zabawki
     {
         private float cena;
         private float wartoscSentymentalna;
-
+        
         public event delegat wzrostWartosciEvent;
 
         public Wartosc(float cena, float wartoscSentymentalna, delegat eventHandler)
