@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Zabawki
@@ -12,6 +13,9 @@ namespace Zabawki
         public event eventType AddEvent;
         public event eventType LimitReached;
         public int Limit = 500;
+
+        private static Mutex mut = new Mutex();
+
         public new void Add(T item)
         {
             if (base.Count < this.Limit)
@@ -24,5 +28,13 @@ namespace Zabawki
                 LimitReached(item, new EventArgs());
             }
         }
+
+        public new void RemoveAt(int index)
+        {
+            mut.WaitOne();
+            base.RemoveAt(0);
+            mut.ReleaseMutex();
+        }
+
     }
 }

@@ -17,7 +17,7 @@ namespace Zabawki
 
         static void OsiagnietoLimit(Object item, EventArgs eventArgs)
         {
-            Console.WriteLine("Osiagnieto limit zabawek.. sorka :/");
+            Console.WriteLine("Osiagnieto limit zabawek..");
         }
 
         static void WzrosrWartosci(Object sender, EventArgs eventArgs)
@@ -34,9 +34,15 @@ namespace Zabawki
 
         static void test2()
         {
-            Thread th = new Thread(thread);
-            th.Start();
-            th.Join();
+            Thread th1 = new Thread(thread);
+            Thread th2 = new Thread(thread);
+            Thread th3 = new Thread(thread);
+            th1.Start();
+            th2.Start();
+            th3.Start();
+            th1.Join();
+            th2.Join();
+            th3.Join();
         }
 
         static void thread()
@@ -50,17 +56,19 @@ namespace Zabawki
 
             for(int i = 0; i < 1000; i++)
             {
-                int a = rand.Next(0, 3);
-
-                switch(a)
+                int a = rand.Next(0, 2);
+                switch (a)
                 {
                     case 0:
+                        Car car = new Car("car #" + i, WzrosrWartosci );
+                        room.Zabawki.Add(car);
                         break;
                     case 1:
+                        Box box = new Box("box #" + i, WzrosrWartosci);
+                        room.Zabawki.Add(box);
                         break;
                     case 2:
-                        break;
-                    case 3:
+                        room.Zabawki.RemoveAt(0);
                         break;
                     default:
                         break;
