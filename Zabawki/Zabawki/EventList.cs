@@ -11,7 +11,7 @@ namespace Zabawki
         public delegate void eventType(T item, EventArgs eventArgs);
         public event eventType AddEvent;
         public event eventType LimitReached;
-        public int Limit = 3;
+        public int Limit = 500;
         public new void Add(T item)
         {
             if (base.Count < this.Limit)

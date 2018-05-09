@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Threading;
 using System.Threading.Tasks;
 
 namespace Zabawki
@@ -26,6 +27,50 @@ namespace Zabawki
 
         static void Main(string[] args)
         {
+            test2();
+
+            Console.ReadKey();
+        }
+
+        static void test2()
+        {
+            Thread th = new Thread(thread);
+            th.Start();
+            th.Join();
+        }
+
+        static void thread()
+        {
+            PokojZabawek room = new PokojZabawek();
+
+            room.Zabawki.AddEvent += DodanoZabawke;
+            room.Zabawki.LimitReached += OsiagnietoLimit;
+
+            Random rand = new Random();
+
+            for(int i = 0; i < 1000; i++)
+            {
+                int a = rand.Next(0, 3);
+
+                switch(a)
+                {
+                    case 0:
+                        break;
+                    case 1:
+                        break;
+                    case 2:
+                        break;
+                    case 3:
+                        break;
+                    default:
+                        break;
+                }
+            }
+
+        }
+
+        static void test1()
+        {
             PokojZabawek room = new PokojZabawek();
 
             room.Zabawki.AddEvent += DodanoZabawke;
@@ -37,8 +82,8 @@ namespace Zabawki
             audi.WartoscBazowa.wzrostWartosciEvent += WzrosrWartosci;
             chocolateBox.WartoscBazowa.wzrostWartosciEvent += WzrosrWartosci;
 
-            room.Zabawki.Add( audi );
-            room.Zabawki.Add( chocolateBox );
+            room.Zabawki.Add(audi);
+            room.Zabawki.Add(chocolateBox);
 
             room.pokazZabawki();
 
@@ -59,9 +104,7 @@ namespace Zabawki
 
             room.setAccelerate(3);
             room.setDive(4);
-            room.setRise(7)
-
-            Console.ReadKey();
+            room.setRise(7);
         }
     }
 }
