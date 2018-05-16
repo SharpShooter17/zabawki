@@ -18,6 +18,7 @@ namespace Zabawki
 
         public new void Add(T item)
         {
+            mut.WaitOne();
             if (base.Count < this.Limit)
             {
                 base.Add(item);
@@ -27,6 +28,7 @@ namespace Zabawki
             {
                 LimitReached(item, new EventArgs());
             }
+            mut.ReleaseMutex();
         }
 
         public new void RemoveAt(int index)

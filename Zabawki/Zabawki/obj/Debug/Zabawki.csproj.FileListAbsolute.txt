@@ -12,3 +12,9 @@ C:\Users\Bartosz Ujazdowski\Desktop\Zabawki\Zabawki\Zabawki\obj\Debug\Zabawki.cs
 C:\Users\Bartosz Ujazdowski\Desktop\Zabawki\Zabawki\Zabawki\obj\Debug\Zabawki.csproj.CoreCompileInputs.cache
 C:\Users\Bartosz Ujazdowski\Desktop\Zabawki\Zabawki\Zabawki\obj\Debug\Zabawki.exe
 C:\Users\Bartosz Ujazdowski\Desktop\Zabawki\Zabawki\Zabawki\obj\Debug\Zabawki.pdb
+C:\Users\pai-1\Desktop\zabawki\Zabawki\Zabawki\bin\Debug\Zabawki.exe.config
+C:\Users\pai-1\Desktop\zabawki\Zabawki\Zabawki\obj\Debug\Zabawki.exe
+C:\Users\pai-1\Desktop\zabawki\Zabawki\Zabawki\obj\Debug\Zabawki.pdb
+C:\Users\pai-1\Desktop\zabawki\Zabawki\Zabawki\bin\Debug\Zabawki.exe
+C:\Users\pai-1\Desktop\zabawki\Zabawki\Zabawki\bin\Debug\Zabawki.pdb
+C:\Users\pai-1\Desktop\zabawki\Zabawki\Zabawki\obj\Debug\Zabawki.csprojResolveAssemblyReference.cache

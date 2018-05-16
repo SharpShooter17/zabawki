@@ -34,21 +34,23 @@ namespace Zabawki
 
         static void test2()
         {
-            Thread th1 = new Thread(thread);
-            Thread th2 = new Thread(thread);
-            Thread th3 = new Thread(thread);
+            PokojZabawek room = new PokojZabawek();
+
+            Thread th1 = new Thread(() => thread(room));
+            Thread th2 = new Thread(() => thread(room));
+            Thread th3 = new Thread(() => thread(room));
+
             th1.Start();
             th2.Start();
             th3.Start();
+
             th1.Join();
             th2.Join();
             th3.Join();
         }
 
-        static void thread()
+        static void thread(PokojZabawek room)
         {
-            PokojZabawek room = new PokojZabawek();
-
             room.Zabawki.AddEvent += DodanoZabawke;
             room.Zabawki.LimitReached += OsiagnietoLimit;
 
