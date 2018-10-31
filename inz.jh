@@ -1,0 +1,58 @@
+entity User {
+	email String required,
+    password String required
+}
+
+entity Offer {
+	link String required
+}
+
+entity UserOffer {
+	longitude Double required,
+    latitude Double required,
+	distance Double required,
+    countOfItems Integer required,
+	countOfItemsToGetBonus Integer required,
+	expirationDate Instant required
+}
+
+entity Chat {
+}
+
+entity UserChat {
+	accepted Boolean required
+}
+
+relationship ManyToOne {
+	UserChat{chat} to Chat{users}
+}
+
+relationship OneToMany {
+	User{chats} to UserChat{user}
+}
+
+relationship OneToMany {
+	Chat{offer} to Offer{chats}
+}
+
+// defining multiple OneToMany relationships with comments
+relationship OneToMany {
+	User{myOfferts} to UserOffer{user}
+}
+
+relationship ManyToOne {
+	UserOffer{offer} to Offer{userOfferts}
+}
+
+// Set pagination options
+paginate Offer with infinite-scroll
+paginate Job with pagination
+
+// Use Data Transfert Objects (DTO)
+// dto * with mapstruct
+
+// Set service options to all except few
+service all with serviceImpl
+
+// Set an angular suffix
+// angularSuffix * with mySuffix
